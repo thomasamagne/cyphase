@@ -2017,8 +2017,11 @@
       });
 
       winCloseBtn.addEventListener('click', () => {
-        winOverlay.classList.remove('open');
-      });
+  winOverlay.classList.remove('open');
+  if (!hasActivePuzzle) {
+    openMenu();
+  }
+});
 
       winNewBtn.addEventListener('click', () => {
         winOverlay.classList.remove('open');
