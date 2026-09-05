@@ -1086,7 +1086,7 @@
       
       <p>
         Fill the board with colored tiles. The number on each tile indicates how many neighbors share the tile's
-        color. Click the tile to change its color.
+        color. Click the tile to change its color. <strong>Can you do it without any checks?</strong>
       </p>
 
       <div class="rules-note-example">
@@ -1968,7 +1968,7 @@
 
       function updateMenuSub() {
         if (dailyCompletedStats) {
-          menuSubEl.textContent = formatCountdown(msUntilNextDaily()) + ' until the next daily. Practice while you wait...';
+          menuSubEl.textContent = formatCountdown(msUntilNextDaily()) + ' until the next daily. While you wait...';
         } else {
           menuSubEl.textContent = 'Or choose a difficulty for a random puzzle:';
         }
